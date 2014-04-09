@@ -60,7 +60,22 @@ add_action('init', function()
     // register the container
     \Mosaicpro\Core\IoC::setContainer($app);
 
-    // alias the components
+    // create shorter aliases for the components
+    class_alias('Mosaicpro\Accordion\Accordion', 'Accordion');
+    class_alias('Mosaicpro\Alert\Alert', 'Alert');
     class_alias('Mosaicpro\Button\Button', 'Button');
+    class_alias('Mosaicpro\ButtonGroup\ButtonGroup', 'ButtonGroup');
+    class_alias('Mosaicpro\Carousel\Carousel', 'Carousel');
+    class_alias('Mosaicpro\Dropdown\Dropdown', 'Dropdown');
+    class_alias('Mosaicpro\Form\FormField', 'FormField');
+    class_alias('Mosaicpro\Form\Checkbox', 'Checkbox');
+    class_alias('Mosaicpro\ListGroup\ListGroup', 'ListGroup');
+    class_alias('Mosaicpro\Media\Media', 'Media');
+    class_alias('Mosaicpro\Modal\Modal', 'Modal');
+    class_alias('Mosaicpro\Nav\Nav', 'Nav');
+    class_alias('Mosaicpro\Navbar\Navbar', 'Navbar');
     class_alias('Mosaicpro\Panel\Panel', 'Panel');
+    class_alias('Mosaicpro\ProgressBar\ProgressBar', 'ProgressBar');
+    class_alias('Mosaicpro\Tab\Tab', 'Tab');
+    class_alias('Mosaicpro\Table\Table', 'Table');
 });
