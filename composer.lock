@@ -1,0 +1,1576 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "be67ad026242474c42168ae0c594f2cc",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "cb0cf453ed771b5626c09be0430cf388d84d0970"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/cb0cf453ed771b5626c09be0430cf388d84d0970",
+                "reference": "cb0cf453ed771b5626c09be0430cf388d84d0970",
+                "shasum": ""
+            },
+            "replace": {
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "Craft",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "WolfCMS",
+                "agl",
+                "annotatecms",
+                "cakephp",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2014-04-04 18:47:10"
+        },
+        {
+            "name": "illuminate/cache",
+            "version": "4.1.x-dev",
+            "target-dir": "Illuminate/Cache",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/cache.git",
+                "reference": "5107dc2d5b79849708b623504b3e20e36f962a90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/cache/zipball/5107dc2d5b79849708b623504b3e20e36f962a90",
+                "reference": "5107dc2d5b79849708b623504b3e20e36f962a90",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "nesbot/carbon": "1.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "illuminate/database": "4.1.*",
+                "illuminate/encryption": "4.1.*",
+                "illuminate/filesystem": "4.1.*",
+                "illuminate/redis": "4.1.*",
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Cache": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-04-04 20:50:53"
+        },
+        {
+            "name": "illuminate/container",
+            "version": "4.1.x-dev",
+            "target-dir": "Illuminate/Container",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/container.git",
+                "reference": "51d590fd7e301f56c567459a26343a8288330f69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/51d590fd7e301f56c567459a26343a8288330f69",
+                "reference": "51d590fd7e301f56c567459a26343a8288330f69",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Container": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-03-22 20:29:54"
+        },
+        {
+            "name": "illuminate/cookie",
+            "version": "4.1.x-dev",
+            "target-dir": "Illuminate/Cookie",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/cookie.git",
+                "reference": "265ff9f3b077c4f549aad0404a85b490c97fe511"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/cookie/zipball/265ff9f3b077c4f549aad0404a85b490c97fe511",
+                "reference": "265ff9f3b077c4f549aad0404a85b490c97fe511",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/encryption": "4.1.*",
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0",
+                "symfony/http-foundation": "2.4.*",
+                "symfony/http-kernel": "2.4.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Cookie": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-04-04 20:50:53"
+        },
+        {
+            "name": "illuminate/encryption",
+            "version": "4.1.x-dev",
+            "target-dir": "Illuminate/Encryption",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/encryption.git",
+                "reference": "a1f42f0e96dee49da0038fe4a78b6e61cbd59695"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/encryption/zipball/a1f42f0e96dee49da0038fe4a78b6e61cbd59695",
+                "reference": "a1f42f0e96dee49da0038fe4a78b6e61cbd59695",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Encryption": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-03-22 20:12:48"
+        },
+        {
+            "name": "illuminate/events",
+            "version": "4.1.x-dev",
+            "target-dir": "Illuminate/Events",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/events.git",
+                "reference": "ef6ae5962134a35667f24349bc2c9b8ad1e20c8b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/events/zipball/ef6ae5962134a35667f24349bc2c9b8ad1e20c8b",
+                "reference": "ef6ae5962134a35667f24349bc2c9b8ad1e20c8b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "4.1.*",
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Events": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-03-22 20:12:48"
+        },
+        {
+            "name": "illuminate/html",
+            "version": "4.1.x-dev",
+            "target-dir": "Illuminate/Html",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/html.git",
+                "reference": "72c9e32d9d62d8631d579a34c0fcdae39ad41927"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/html/zipball/72c9e32d9d62d8631d579a34c0fcdae39ad41927",
+                "reference": "72c9e32d9d62d8631d579a34c0fcdae39ad41927",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "4.1.*",
+                "illuminate/session": "4.1.*",
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Html": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-03-22 20:12:48"
+        },
+        {
+            "name": "illuminate/http",
+            "version": "4.1.x-dev",
+            "target-dir": "Illuminate/Http",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/http.git",
+                "reference": "98f3551c6572ffcfdbfdf40e618c3d5c8c202079"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/http/zipball/98f3551c6572ffcfdbfdf40e618c3d5c8c202079",
+                "reference": "98f3551c6572ffcfdbfdf40e618c3d5c8c202079",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/session": "4.1.*",
+                "illuminate/support": "4.1.*",
+                "symfony/http-foundation": "2.4.*",
+                "symfony/http-kernel": "2.4.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Http": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-03-23 03:31:02"
+        },
+        {
+            "name": "illuminate/routing",
+            "version": "4.1.x-dev",
+            "target-dir": "Illuminate/Routing",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/routing.git",
+                "reference": "00eae55cd86e2a1d3dbf746dc8f5c21eb72426d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/routing/zipball/00eae55cd86e2a1d3dbf746dc8f5c21eb72426d3",
+                "reference": "00eae55cd86e2a1d3dbf746dc8f5c21eb72426d3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "4.1.*",
+                "illuminate/http": "4.1.*",
+                "illuminate/session": "4.1.*",
+                "illuminate/support": "4.1.*",
+                "symfony/http-foundation": "2.4.*",
+                "symfony/http-kernel": "2.4.*",
+                "symfony/routing": "2.4.*"
+            },
+            "require-dev": {
+                "illuminate/console": "4.1.*",
+                "illuminate/filesystem": "4.1.*",
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Routing": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-03-22 20:29:54"
+        },
+        {
+            "name": "illuminate/session",
+            "version": "4.1.x-dev",
+            "target-dir": "Illuminate/Session",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/session.git",
+                "reference": "2b9d7f871f0a1f1e23843e625a90121da325733e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/session/zipball/2b9d7f871f0a1f1e23843e625a90121da325733e",
+                "reference": "2b9d7f871f0a1f1e23843e625a90121da325733e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": "4.1.*",
+                "illuminate/cookie": "4.1.*",
+                "illuminate/encryption": "4.1.*",
+                "illuminate/support": "4.1.*",
+                "nesbot/carbon": "1.*",
+                "php": ">=5.3.0",
+                "symfony/finder": "2.4.*",
+                "symfony/http-foundation": "2.4.*"
+            },
+            "require-dev": {
+                "illuminate/console": "4.1.*",
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Session": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-03-18 21:30:53"
+        },
+        {
+            "name": "illuminate/support",
+            "version": "4.1.x-dev",
+            "target-dir": "Illuminate/Support",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/support.git",
+                "reference": "69b248f240719e8d764ee6ec0384819fa57d60bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/69b248f240719e8d764ee6ec0384819fa57d60bb",
+                "reference": "69b248f240719e8d764ee6ec0384819fa57d60bb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "jeremeamia/superclosure": "1.0.*",
+                "mockery/mockery": "0.9.*",
+                "patchwork/utf8": "1.1.*",
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Support": ""
+                },
+                "files": [
+                    "Illuminate/Support/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-03-22 20:29:54"
+        },
+        {
+            "name": "mosaicpro/accordion",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-accordion",
+                "reference": "c92ee1e703df"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations",
+                    "src/config"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\Accordion\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:16:37"
+        },
+        {
+            "name": "mosaicpro/alert",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-alert",
+                "reference": "ab5d3aca3321"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\Alert\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:13:28"
+        },
+        {
+            "name": "mosaicpro/button",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-button",
+                "reference": "2a5bc918cc5e"
+            },
+            "require": {
+                "illuminate/events": "4.1.*",
+                "illuminate/html": "4.1.*",
+                "illuminate/routing": "4.1.*",
+                "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\Button\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:13:41"
+        },
+        {
+            "name": "mosaicpro/button-group",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-button-group",
+                "reference": "aa4d4d3c05d5"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\ButtonGroup\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:13:54"
+        },
+        {
+            "name": "mosaicpro/carousel",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-carousel",
+                "reference": "78bb073ce673"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\Carousel\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:15:46"
+        },
+        {
+            "name": "mosaicpro/core",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-core",
+                "reference": "b529cf6c35d4"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mosaicpro\\Core": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:12:56"
+        },
+        {
+            "name": "mosaicpro/dropdown",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-dropdown",
+                "reference": "749bbe3baa0f"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\Dropdown\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:16:50"
+        },
+        {
+            "name": "mosaicpro/form",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-form",
+                "reference": "210b97146aaf"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/config"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\Form": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:14:36"
+        },
+        {
+            "name": "mosaicpro/list-group",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-list-group",
+                "reference": "3eba114b7b53"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\ListGroup\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:17:09"
+        },
+        {
+            "name": "mosaicpro/media",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-media",
+                "reference": "e96041f75541"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\Media\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:16:05"
+        },
+        {
+            "name": "mosaicpro/modal",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-modal",
+                "reference": "dca712bdf268"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\Modal\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:15:08"
+        },
+        {
+            "name": "mosaicpro/nav",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-nav",
+                "reference": "b6d97ceac6ea"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\Nav\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:14:06"
+        },
+        {
+            "name": "mosaicpro/navbar",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-navbar",
+                "reference": "9e8a95d97264"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\Navbar\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:14:23"
+        },
+        {
+            "name": "mosaicpro/panel",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-panel",
+                "reference": "1c904972007a"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\Panel\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:16:22"
+        },
+        {
+            "name": "mosaicpro/progress-bar",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-progress-bar",
+                "reference": "262337756c87"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\ProgressBar\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:14:48"
+        },
+        {
+            "name": "mosaicpro/tab",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-tab",
+                "reference": "a4a589c4f173"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\Tab\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:15:21"
+        },
+        {
+            "name": "mosaicpro/table",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-table",
+                "reference": "e1b6d15532c7"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\Table\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-09 11:15:33"
+        },
+        {
+            "name": "nesbot/carbon",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/briannesbitt/Carbon.git",
+                "reference": "21c4cb4301969c7d85aee8a62eefdfa881413af0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/21c4cb4301969c7d85aee8a62eefdfa881413af0",
+                "reference": "21c4cb4301969c7d85aee8a62eefdfa881413af0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Carbon": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Nesbitt",
+                    "email": "brian@nesbot.com",
+                    "homepage": "http://nesbot.com"
+                }
+            ],
+            "description": "A simple API extension for DateTime.",
+            "homepage": "https://github.com/briannesbitt/Carbon",
+            "keywords": [
+                "date",
+                "datetime",
+                "time"
+            ],
+            "time": "2014-01-07 05:10:44"
+        },
+        {
+            "name": "psr/log",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "a78d6504ff5d4367497785ab2ade91db3a9fbe11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/a78d6504ff5d4367497785ab2ade91db3a9fbe11",
+                "reference": "a78d6504ff5d4367497785ab2ade91db3a9fbe11",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2014-01-18 15:33:09"
+        },
+        {
+            "name": "symfony/debug",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Debug",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Debug.git",
+                "reference": "5eec1e0a1fad0d4a7c0e8a57ebe6f0f5665ca9ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Debug/zipball/5eec1e0a1fad0d4a7c0e8a57ebe6f0f5665ca9ad",
+                "reference": "5eec1e0a1fad0d4a7c0e8a57ebe6f0f5665ca9ad",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/http-foundation": "~2.1",
+                "symfony/http-kernel": "~2.1"
+            },
+            "suggest": {
+                "symfony/http-foundation": "",
+                "symfony/http-kernel": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Debug\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Debug Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-03-26 18:07:49"
+        },
+        {
+            "name": "symfony/event-dispatcher",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/EventDispatcher",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/EventDispatcher.git",
+                "reference": "4b9a8defce833386224bdbf9045128a6e51fb0b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/4b9a8defce833386224bdbf9045128a6e51fb0b4",
+                "reference": "4b9a8defce833386224bdbf9045128a6e51fb0b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/dependency-injection": "~2.0",
+                "symfony/stopwatch": "~2.2"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "",
+                "symfony/http-kernel": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\EventDispatcher\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony EventDispatcher Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-04-03 05:23:50"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "2.4.x-dev",
+            "target-dir": "Symfony/Component/Finder",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Finder.git",
+                "reference": "ab301c7d21f536c34ab6c2c79dba8d465104c518"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/ab301c7d21f536c34ab6c2c79dba8d465104c518",
+                "reference": "ab301c7d21f536c34ab6c2c79dba8d465104c518",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Finder\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-03-01 17:35:04"
+        },
+        {
+            "name": "symfony/http-foundation",
+            "version": "2.4.x-dev",
+            "target-dir": "Symfony/Component/HttpFoundation",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/HttpFoundation.git",
+                "reference": "11ad7352c7bfa12145a0df8e1c4c303c585ce169"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/11ad7352c7bfa12145a0df8e1c4c303c585ce169",
+                "reference": "11ad7352c7bfa12145a0df8e1c4c303c585ce169",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/expression-language": "~2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\HttpFoundation\\": ""
+                },
+                "classmap": [
+                    "Symfony/Component/HttpFoundation/Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony HttpFoundation Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-03-26 11:35:33"
+        },
+        {
+            "name": "symfony/http-kernel",
+            "version": "2.4.x-dev",
+            "target-dir": "Symfony/Component/HttpKernel",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/HttpKernel.git",
+                "reference": "a7ef61c6fde565372feebecbf678d821c0a425d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/a7ef61c6fde565372feebecbf678d821c0a425d5",
+                "reference": "a7ef61c6fde565372feebecbf678d821c0a425d5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "psr/log": "~1.0",
+                "symfony/debug": "~2.3",
+                "symfony/event-dispatcher": "~2.1",
+                "symfony/http-foundation": "~2.4"
+            },
+            "require-dev": {
+                "symfony/browser-kit": "~2.2",
+                "symfony/class-loader": "~2.1",
+                "symfony/config": "~2.0",
+                "symfony/console": "~2.2",
+                "symfony/dependency-injection": "~2.0",
+                "symfony/finder": "~2.0",
+                "symfony/process": "~2.0",
+                "symfony/routing": "~2.2",
+                "symfony/stopwatch": "~2.2",
+                "symfony/templating": "~2.2"
+            },
+            "suggest": {
+                "symfony/browser-kit": "",
+                "symfony/class-loader": "",
+                "symfony/config": "",
+                "symfony/console": "",
+                "symfony/dependency-injection": "",
+                "symfony/finder": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\HttpKernel\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony HttpKernel Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-04-05 11:49:17"
+        },
+        {
+            "name": "symfony/routing",
+            "version": "2.4.x-dev",
+            "target-dir": "Symfony/Component/Routing",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Routing.git",
+                "reference": "b2fdea8b60400bb84e4931d71101ebbb3a08c1eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Routing/zipball/b2fdea8b60400bb84e4931d71101ebbb3a08c1eb",
+                "reference": "b2fdea8b60400bb84e4931d71101ebbb3a08c1eb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "doctrine/annotations": "~1.0",
+                "psr/log": "~1.0",
+                "symfony/config": "~2.2",
+                "symfony/expression-language": "~2.4",
+                "symfony/yaml": "~2.0"
+            },
+            "suggest": {
+                "doctrine/annotations": "For using the annotation loader",
+                "symfony/config": "For using the all-in-one router or any loader",
+                "symfony/expression-language": "For using expression matching",
+                "symfony/yaml": "For using the YAML loader"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Routing\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Routing Component",
+            "homepage": "http://symfony.com",
+            "keywords": [
+                "router",
+                "routing",
+                "uri",
+                "url"
+            ],
+            "time": "2014-02-11 13:52:09"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "mosaicpro/core": 20,
+        "mosaicpro/accordion": 20,
+        "mosaicpro/list-group": 20,
+        "mosaicpro/media": 20,
+        "mosaicpro/panel": 20,
+        "mosaicpro/alert": 20,
+        "mosaicpro/nav": 20,
+        "mosaicpro/navbar": 20,
+        "mosaicpro/dropdown": 20,
+        "mosaicpro/button-group": 20,
+        "mosaicpro/progress-bar": 20,
+        "mosaicpro/modal": 20,
+        "mosaicpro/tab": 20,
+        "mosaicpro/carousel": 20,
+        "mosaicpro/button": 20,
+        "mosaicpro/form": 20,
+        "mosaicpro/table": 20
+    },
+    "platform": {
+        "php": ">=5.3.0"
+    },
+    "platform-dev": [
+
+    ]
+}
