@@ -17,7 +17,7 @@ add_action('init', function()
     require_once dirname(__FILE__) . '/vendor/illuminate/support/Illuminate/Support/helpers.php';
 
     // instantiate the container
-    $app = new Illuminate\Container\Container;
+    $app = new \Illuminate\Container\Container;
     $request = new \Illuminate\Http\Request;
     $app->bind('app', $app);
     $app->bind('request', $request);
@@ -78,4 +78,14 @@ add_action('init', function()
     class_alias('Mosaicpro\ProgressBar\ProgressBar', 'ProgressBar');
     class_alias('Mosaicpro\Tab\Tab', 'Tab');
     class_alias('Mosaicpro\Table\Table', 'Table');
+
+});
+
+add_action('admin_enqueue_scripts', function()
+{
+   if (is_admin())
+   {
+       wp_enqueue_script('admin-bootstrap', plugin_dir_url(__FILE__) . 'assets/bootstrap/js/bootstrap.min.js', ['jquery'], '3.1.1', true);
+       wp_enqueue_style('admin-bootstrap', plugin_dir_url(__FILE__) . 'assets/bootstrap/css/admin-bootstrap-wrapper-3.1.1.css', [], '3.1.1');
+   }
 });

@@ -28,6 +28,7 @@
         "mosaicpro/carousel": "dev-master",
         "mosaicpro/button": "dev-master",
         "mosaicpro/form": "dev-master",
-        "mosaicpro/table": "dev-master"
+        "mosaicpro/table": "dev-master",
+        "mosaicpro/wp-core": "dev-master"
     }
 }

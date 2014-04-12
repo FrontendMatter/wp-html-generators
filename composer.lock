@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "be67ad026242474c42168ae0c594f2cc",
+    "hash": "031a1b65228e1f3360fd10dc13b9a7ba",
     "packages": [
         {
             "name": "composer/installers",
@@ -1092,6 +1092,31 @@
             "time": "2014-04-09 11:15:33"
         },
         {
+            "name": "mosaicpro/wp-core",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-wp-core",
+                "reference": "58e370a5ac82"
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mosaicpro\\WpCore": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "time": "2014-04-10 12:40:51"
+        },
+        {
             "name": "nesbot/carbon",
             "version": "1.8.0",
             "source": {
@@ -1565,7 +1590,8 @@
         "mosaicpro/carousel": 20,
         "mosaicpro/button": 20,
         "mosaicpro/form": 20,
-        "mosaicpro/table": 20
+        "mosaicpro/table": 20,
+        "mosaicpro/wp-core": 20
     },
     "platform": {
         "php": ">=5.3.0"
