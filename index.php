@@ -43,19 +43,32 @@ add_action('init', function()
         $instance->boot();
 
     // bind the html builder to the container
-    // used by some components
     $app->bindShared('html', function($app)
     {
         return new \Illuminate\Html\HtmlBuilder($app['url']);
     });
 
     // bind the form builder to the container
-    // used by some components
     $app->bindShared('form', function($app)
     {
         $form = new \Illuminate\Html\FormBuilder($app['html'], $app['url'], '');
         return $form;
     });
+
+    // bind the config component to the container
+    $app->bindShared('config', function($app)
+    {
+        $configPath = __DIR__ . '/../config';
+        $environment = 'production';
+
+        $file = new \Illuminate\Filesystem\Filesystem;
+        $loader = new \Illuminate\Config\FileLoader($file, $configPath);
+        $config = new \Illuminate\Config\Repository($loader, $environment);
+        return $config;
+    });
+
+    // register mosaicpro/form config package
+    $app['config']->package('mosaicpro/form', __DIR__ . '/vendor/mosaicpro/form/src/config');
 
     // register the container
     \Mosaicpro\Core\IoC::setContainer($app);
@@ -83,9 +96,6 @@ add_action('init', function()
 
 add_action('admin_enqueue_scripts', function()
 {
-   if (is_admin())
-   {
-       wp_enqueue_script('admin-bootstrap', plugin_dir_url(__FILE__) . 'assets/bootstrap/js/bootstrap.min.js', ['jquery'], '3.1.1', true);
-       wp_enqueue_style('admin-bootstrap', plugin_dir_url(__FILE__) . 'assets/bootstrap/css/admin-bootstrap-wrapper-3.1.1.css', [], '3.1.1');
-   }
+    wp_enqueue_script('admin-bootstrap', plugin_dir_url(__FILE__) . 'assets/bootstrap/js/bootstrap.min.js', ['jquery'], '3.1.1', true);
+    wp_enqueue_style('admin-bootstrap', plugin_dir_url(__FILE__) . 'assets/bootstrap/css/admin-bootstrap-wrapper-3.1.1.css', [], '3.1.1');
 });

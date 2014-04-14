@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "cb0cf453ed771b5626c09be0430cf388d84d0970"
+                "reference": "26d37e307f9aa6e2e81806a6525666f8ab5ba0ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/cb0cf453ed771b5626c09be0430cf388d84d0970",
-                "reference": "cb0cf453ed771b5626c09be0430cf388d84d0970",
+                "url": "https://api.github.com/repos/composer/installers/zipball/26d37e307f9aa6e2e81806a6525666f8ab5ba0ff",
+                "reference": "26d37e307f9aa6e2e81806a6525666f8ab5ba0ff",
                 "shasum": ""
             },
             "replace": {
@@ -87,7 +87,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-04-04 18:47:10"
+            "time": "2014-04-09 16:12:43"
         },
         {
             "name": "illuminate/cache",
@@ -96,12 +96,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/cache.git",
-                "reference": "5107dc2d5b79849708b623504b3e20e36f962a90"
+                "reference": "30dbbb96c651f6b7ceea1701ccb3b36d1d2b2ce1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/cache/zipball/5107dc2d5b79849708b623504b3e20e36f962a90",
-                "reference": "5107dc2d5b79849708b623504b3e20e36f962a90",
+                "url": "https://api.github.com/repos/illuminate/cache/zipball/30dbbb96c651f6b7ceea1701ccb3b36d1d2b2ce1",
+                "reference": "30dbbb96c651f6b7ceea1701ccb3b36d1d2b2ce1",
                 "shasum": ""
             },
             "require": {
@@ -142,18 +142,66 @@
             "time": "2014-04-04 20:50:53"
         },
         {
+            "name": "illuminate/config",
+            "version": "4.1.x-dev",
+            "target-dir": "Illuminate/Config",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/config.git",
+                "reference": "1ccff6c10401dae4d5a708e3aed0bf0b86951689"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/config/zipball/1ccff6c10401dae4d5a708e3aed0bf0b86951689",
+                "reference": "1ccff6c10401dae4d5a708e3aed0bf0b86951689",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "4.1.*",
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Config": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-03-22 20:12:48"
+        },
+        {
             "name": "illuminate/container",
             "version": "4.1.x-dev",
             "target-dir": "Illuminate/Container",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
-                "reference": "51d590fd7e301f56c567459a26343a8288330f69"
+                "reference": "6f37563d0088a349d56e416673e647a0b6503479"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/51d590fd7e301f56c567459a26343a8288330f69",
-                "reference": "51d590fd7e301f56c567459a26343a8288330f69",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/6f37563d0088a349d56e416673e647a0b6503479",
+                "reference": "6f37563d0088a349d56e416673e647a0b6503479",
                 "shasum": ""
             },
             "require": {
@@ -194,12 +242,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/cookie.git",
-                "reference": "265ff9f3b077c4f549aad0404a85b490c97fe511"
+                "reference": "007daf5970f9bdf48180965b62384390e370848b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/cookie/zipball/265ff9f3b077c4f549aad0404a85b490c97fe511",
-                "reference": "265ff9f3b077c4f549aad0404a85b490c97fe511",
+                "url": "https://api.github.com/repos/illuminate/cookie/zipball/007daf5970f9bdf48180965b62384390e370848b",
+                "reference": "007daf5970f9bdf48180965b62384390e370848b",
                 "shasum": ""
             },
             "require": {
@@ -245,12 +293,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/encryption.git",
-                "reference": "a1f42f0e96dee49da0038fe4a78b6e61cbd59695"
+                "reference": "f07c13d8f52a8d8a786f394c2776728f7148b8f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/encryption/zipball/a1f42f0e96dee49da0038fe4a78b6e61cbd59695",
-                "reference": "a1f42f0e96dee49da0038fe4a78b6e61cbd59695",
+                "url": "https://api.github.com/repos/illuminate/encryption/zipball/f07c13d8f52a8d8a786f394c2776728f7148b8f7",
+                "reference": "f07c13d8f52a8d8a786f394c2776728f7148b8f7",
                 "shasum": ""
             },
             "require": {
@@ -292,12 +340,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
-                "reference": "ef6ae5962134a35667f24349bc2c9b8ad1e20c8b"
+                "reference": "4e83ee4f255ec084d510e533ef8e98961aae8729"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/events/zipball/ef6ae5962134a35667f24349bc2c9b8ad1e20c8b",
-                "reference": "ef6ae5962134a35667f24349bc2c9b8ad1e20c8b",
+                "url": "https://api.github.com/repos/illuminate/events/zipball/4e83ee4f255ec084d510e533ef8e98961aae8729",
+                "reference": "4e83ee4f255ec084d510e533ef8e98961aae8729",
                 "shasum": ""
             },
             "require": {
@@ -335,18 +383,66 @@
             "time": "2014-03-22 20:12:48"
         },
         {
+            "name": "illuminate/filesystem",
+            "version": "4.1.x-dev",
+            "target-dir": "Illuminate/Filesystem",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/filesystem.git",
+                "reference": "bae44b67e7bd68ef676c77cdb70eb505a3aff9aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/bae44b67e7bd68ef676c77cdb70eb505a3aff9aa",
+                "reference": "bae44b67e7bd68ef676c77cdb70eb505a3aff9aa",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0",
+                "symfony/finder": "2.4.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Filesystem": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-03-22 20:12:48"
+        },
+        {
             "name": "illuminate/html",
             "version": "4.1.x-dev",
             "target-dir": "Illuminate/Html",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/html.git",
-                "reference": "72c9e32d9d62d8631d579a34c0fcdae39ad41927"
+                "reference": "71ef4dc22dc744d49322302ba41862563df8af7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/html/zipball/72c9e32d9d62d8631d579a34c0fcdae39ad41927",
-                "reference": "72c9e32d9d62d8631d579a34c0fcdae39ad41927",
+                "url": "https://api.github.com/repos/illuminate/html/zipball/71ef4dc22dc744d49322302ba41862563df8af7c",
+                "reference": "71ef4dc22dc744d49322302ba41862563df8af7c",
                 "shasum": ""
             },
             "require": {
@@ -391,12 +487,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/http.git",
-                "reference": "98f3551c6572ffcfdbfdf40e618c3d5c8c202079"
+                "reference": "4bb6c023d3f47d26ec9ba37f3383de9f27b46b01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/http/zipball/98f3551c6572ffcfdbfdf40e618c3d5c8c202079",
-                "reference": "98f3551c6572ffcfdbfdf40e618c3d5c8c202079",
+                "url": "https://api.github.com/repos/illuminate/http/zipball/4bb6c023d3f47d26ec9ba37f3383de9f27b46b01",
+                "reference": "4bb6c023d3f47d26ec9ba37f3383de9f27b46b01",
                 "shasum": ""
             },
             "require": {
@@ -432,7 +528,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-03-23 03:31:02"
+            "time": "2014-04-11 19:21:28"
         },
         {
             "name": "illuminate/routing",
@@ -441,12 +537,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/routing.git",
-                "reference": "00eae55cd86e2a1d3dbf746dc8f5c21eb72426d3"
+                "reference": "95a86a45b95ebf1ca722d329552947aa6aa3a905"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/routing/zipball/00eae55cd86e2a1d3dbf746dc8f5c21eb72426d3",
-                "reference": "00eae55cd86e2a1d3dbf746dc8f5c21eb72426d3",
+                "url": "https://api.github.com/repos/illuminate/routing/zipball/95a86a45b95ebf1ca722d329552947aa6aa3a905",
+                "reference": "95a86a45b95ebf1ca722d329552947aa6aa3a905",
                 "shasum": ""
             },
             "require": {
@@ -487,7 +583,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-03-22 20:29:54"
+            "time": "2014-04-10 13:20:22"
         },
         {
             "name": "illuminate/session",
@@ -602,10 +698,15 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-accordion",
-                "reference": "c92ee1e703df"
+                "reference": "1e1e23b4bb90"
             },
             "require": {
+                "illuminate/container": "4.1.*",
+                "illuminate/events": "4.1.*",
+                "illuminate/html": "4.1.*",
+                "illuminate/routing": "4.1.*",
                 "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -624,7 +725,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:16:37"
+            "description": "Bootstrap 3 Accordion Markup Generator",
+            "time": "2014-04-13 17:36:49"
         },
         {
             "name": "mosaicpro/alert",
@@ -632,10 +734,11 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-alert",
-                "reference": "ab5d3aca3321"
+                "reference": "a8f0b2ea8fce"
             },
             "require": {
                 "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -653,7 +756,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:13:28"
+            "description": "Bootstrap 3 Alert Markup Generator",
+            "time": "2014-04-13 17:51:01"
         },
         {
             "name": "mosaicpro/button",
@@ -661,9 +765,10 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-button",
-                "reference": "2a5bc918cc5e"
+                "reference": "d2458c8b7f7b"
             },
             "require": {
+                "illuminate/container": "4.1.*",
                 "illuminate/events": "4.1.*",
                 "illuminate/html": "4.1.*",
                 "illuminate/routing": "4.1.*",
@@ -686,7 +791,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:13:41"
+            "description": "Bootstrap 3 Button Markup Generator",
+            "time": "2014-04-13 17:08:41"
         },
         {
             "name": "mosaicpro/button-group",
@@ -694,10 +800,12 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-button-group",
-                "reference": "aa4d4d3c05d5"
+                "reference": "4365f89ab59e"
             },
             "require": {
                 "illuminate/support": "4.1.*",
+                "mosaicpro/button": "dev-master",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -715,7 +823,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:13:54"
+            "description": "Bootstrap 3 Button Group Markup Generator",
+            "time": "2014-04-13 17:52:02"
         },
         {
             "name": "mosaicpro/carousel",
@@ -723,10 +832,11 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-carousel",
-                "reference": "78bb073ce673"
+                "reference": "a4c67947d295"
             },
             "require": {
                 "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -744,7 +854,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:15:46"
+            "description": "Bootstrap 3 Carousel Markup Generator",
+            "time": "2014-04-13 17:59:38"
         },
         {
             "name": "mosaicpro/core",
@@ -752,7 +863,7 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-core",
-                "reference": "b529cf6c35d4"
+                "reference": "eac5a776a138"
             },
             "require": {
                 "illuminate/support": "4.1.*",
@@ -770,7 +881,7 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:12:56"
+            "time": "2014-04-13 16:55:18"
         },
         {
             "name": "mosaicpro/dropdown",
@@ -778,10 +889,11 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-dropdown",
-                "reference": "749bbe3baa0f"
+                "reference": "a147694c48e1"
             },
             "require": {
                 "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -799,7 +911,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:16:50"
+            "description": "Bootstrap 3 Dropdown Markup Generator",
+            "time": "2014-04-13 18:02:20"
         },
         {
             "name": "mosaicpro/form",
@@ -807,10 +920,16 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-form",
-                "reference": "210b97146aaf"
+                "reference": "57330ea918fa"
             },
             "require": {
+                "illuminate/config": "4.1.*",
+                "illuminate/container": "4.1.*",
+                "illuminate/events": "4.1.*",
+                "illuminate/html": "4.1.*",
+                "illuminate/routing": "4.1.*",
                 "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -828,7 +947,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:14:36"
+            "description": "Bootstrap 3 Form Markup Generator",
+            "time": "2014-04-13 20:20:56"
         },
         {
             "name": "mosaicpro/list-group",
@@ -836,10 +956,15 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-list-group",
-                "reference": "3eba114b7b53"
+                "reference": "51b14752a3a1"
             },
             "require": {
+                "illuminate/container": "4.1.*",
+                "illuminate/events": "4.1.*",
+                "illuminate/html": "4.1.*",
+                "illuminate/routing": "4.1.*",
                 "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -857,7 +982,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:17:09"
+            "description": "Bootstrap 3 List Group Markup Generator",
+            "time": "2014-04-13 18:07:21"
         },
         {
             "name": "mosaicpro/media",
@@ -865,10 +991,15 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-media",
-                "reference": "e96041f75541"
+                "reference": "3096a1e0dacc"
             },
             "require": {
+                "illuminate/container": "4.1.*",
+                "illuminate/events": "4.1.*",
+                "illuminate/html": "4.1.*",
+                "illuminate/routing": "4.1.*",
                 "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -886,7 +1017,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:16:05"
+            "description": "Bootstrap 3 Media Markup Generator",
+            "time": "2014-04-13 18:10:52"
         },
         {
             "name": "mosaicpro/modal",
@@ -894,10 +1026,11 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-modal",
-                "reference": "dca712bdf268"
+                "reference": "ae3019f73d08"
             },
             "require": {
                 "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -915,7 +1048,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:15:08"
+            "description": "Bootstrap 3 Modal Markup Generator",
+            "time": "2014-04-13 18:12:26"
         },
         {
             "name": "mosaicpro/nav",
@@ -923,10 +1057,11 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-nav",
-                "reference": "b6d97ceac6ea"
+                "reference": "59e24bec105e"
             },
             "require": {
                 "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -944,7 +1079,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:14:06"
+            "description": "Bootstrap 3 Nav Markup Generator",
+            "time": "2014-04-13 19:49:58"
         },
         {
             "name": "mosaicpro/navbar",
@@ -952,10 +1088,15 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-navbar",
-                "reference": "9e8a95d97264"
+                "reference": "2e96540059b0"
             },
             "require": {
+                "illuminate/container": "4.1.*",
+                "illuminate/events": "4.1.*",
+                "illuminate/html": "4.1.*",
+                "illuminate/routing": "4.1.*",
                 "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -973,7 +1114,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:14:23"
+            "description": "Bootstrap 3 Navbar Markup Generator",
+            "time": "2014-04-13 19:57:00"
         },
         {
             "name": "mosaicpro/panel",
@@ -981,10 +1123,11 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-panel",
-                "reference": "1c904972007a"
+                "reference": "a86dd3f6f516"
             },
             "require": {
                 "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -1002,7 +1145,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:16:22"
+            "description": "Bootstrap 3 Panel Markup Generator",
+            "time": "2014-04-13 19:59:00"
         },
         {
             "name": "mosaicpro/progress-bar",
@@ -1010,10 +1154,11 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-progress-bar",
-                "reference": "262337756c87"
+                "reference": "6b89d5365b9f"
             },
             "require": {
                 "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -1031,7 +1176,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:14:48"
+            "description": "Bootstrap 3 Progress Bar Markup Generator",
+            "time": "2014-04-13 20:00:46"
         },
         {
             "name": "mosaicpro/tab",
@@ -1039,10 +1185,11 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-tab",
-                "reference": "a4a589c4f173"
+                "reference": "4091537f5cc0"
             },
             "require": {
                 "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -1060,7 +1207,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:15:21"
+            "description": "Bootstrap 3 Tab Markup Generator",
+            "time": "2014-04-13 20:03:27"
         },
         {
             "name": "mosaicpro/table",
@@ -1068,10 +1216,11 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-table",
-                "reference": "e1b6d15532c7"
+                "reference": "36bdccf9aee4"
             },
             "require": {
                 "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -1089,7 +1238,8 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-09 11:15:33"
+            "description": "Bootstrap 3 Table Markup Generator",
+            "time": "2014-04-13 20:05:31"
         },
         {
             "name": "mosaicpro/wp-core",
@@ -1097,7 +1247,7 @@
             "source": {
                 "type": "hg",
                 "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-wp-core",
-                "reference": "58e370a5ac82"
+                "reference": "83fb8c6ab04e"
             },
             "require": {
                 "php": ">=5.3.0"
@@ -1114,7 +1264,7 @@
                     "email": "laza.bogdan@macro-net.ro"
                 }
             ],
-            "time": "2014-04-10 12:40:51"
+            "time": "2014-04-13 16:52:50"
         },
         {
             "name": "nesbot/carbon",
@@ -1376,12 +1526,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "11ad7352c7bfa12145a0df8e1c4c303c585ce169"
+                "reference": "049b2acf5fc5793532c8719dc7edb56c6f12d9a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/11ad7352c7bfa12145a0df8e1c4c303c585ce169",
-                "reference": "11ad7352c7bfa12145a0df8e1c4c303c585ce169",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/049b2acf5fc5793532c8719dc7edb56c6f12d9a3",
+                "reference": "049b2acf5fc5793532c8719dc7edb56c6f12d9a3",
                 "shasum": ""
             },
             "require": {
@@ -1422,7 +1572,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2014-03-26 11:35:33"
+            "time": "2014-04-11 18:33:45"
         },
         {
             "name": "symfony/http-kernel",
@@ -1431,12 +1581,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "a7ef61c6fde565372feebecbf678d821c0a425d5"
+                "reference": "2c47845bb1eb4ae5078779b0e83f4bf7c9565cb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/a7ef61c6fde565372feebecbf678d821c0a425d5",
-                "reference": "a7ef61c6fde565372feebecbf678d821c0a425d5",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/2c47845bb1eb4ae5078779b0e83f4bf7c9565cb9",
+                "reference": "2c47845bb1eb4ae5078779b0e83f4bf7c9565cb9",
                 "shasum": ""
             },
             "require": {
@@ -1495,7 +1645,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2014-04-05 11:49:17"
+            "time": "2014-04-11 18:33:45"
         },
         {
             "name": "symfony/routing",
