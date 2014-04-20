@@ -29,6 +29,7 @@
         "mosaicpro/button": "dev-master",
         "mosaicpro/form": "dev-master",
         "mosaicpro/table": "dev-master",
+        "mosaicpro/grid": "dev-master",
         "mosaicpro/wp-core": "dev-master"
     }
 }
