@@ -101,6 +101,7 @@ class_alias('Mosaicpro\Panel\Panel', 'Panel');
 class_alias('Mosaicpro\ProgressBar\ProgressBar', 'ProgressBar');
 class_alias('Mosaicpro\Tab\Tab', 'Tab');
 class_alias('Mosaicpro\Table\Table', 'Table');
+class_alias('Mosaicpro\Grid\Grid', 'Grid');
 
 add_action('admin_enqueue_scripts', function()
 {
