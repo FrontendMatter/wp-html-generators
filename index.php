@@ -16,16 +16,38 @@ require_once dirname(__FILE__) . '/vendor/illuminate/support/Illuminate/Support/
 
 // instantiate the container
 $app = new \Illuminate\Container\Container;
-$request = new \Illuminate\Http\Request;
 $app->bind('app', $app);
-$app->bind('request', $request);
-$app->bind('env', function(){});
-$app->bind('session.store', function(){});
+$app->bind('request', '\Illuminate\Http\Request');
+$app['env'] = "";
+
+// bind the config component to the container
+$app->bindShared('config', function($app)
+{
+    $configPath = __DIR__ . '/../config';
+    $environment = 'production';
+
+    $file = new \Illuminate\Filesystem\Filesystem;
+    $loader = new \Illuminate\Config\FileLoader($file, $configPath);
+    $config = new \Illuminate\Config\Repository($loader, $environment);
+    return $config;
+});
+
+// session
+$app['config']['session.driver'] = 'array';
+$app->bindShared('session', function($app)
+{
+    return new \Illuminate\Session\SessionManager($app);
+});
+$app->bindShared('session.store', function($app)
+{
+    $manager = $app['session'];
+    return $manager->driver();
+});
 
 // define the providers
 $providers = array(
     'Illuminate\Events\EventServiceProvider',
-    'Illuminate\Routing\RoutingServiceProvider',
+    'Illuminate\Routing\RoutingServiceProvider'
 );
 
 // Register the providers
@@ -49,20 +71,8 @@ $app->bindShared('html', function($app)
 // bind the form builder to the container
 $app->bindShared('form', function($app)
 {
-    $form = new \Illuminate\Html\FormBuilder($app['html'], $app['url'], '');
-    return $form;
-});
-
-// bind the config component to the container
-$app->bindShared('config', function($app)
-{
-    $configPath = __DIR__ . '/../config';
-    $environment = 'production';
-
-    $file = new \Illuminate\Filesystem\Filesystem;
-    $loader = new \Illuminate\Config\FileLoader($file, $configPath);
-    $config = new \Illuminate\Config\Repository($loader, $environment);
-    return $config;
+    $form = new \Illuminate\Html\FormBuilder($app['html'], $app['url'], $app['session.store']->getToken());
+    return $form->setSessionStore($app['session.store']);
 });
 
 // register mosaicpro/form config package
