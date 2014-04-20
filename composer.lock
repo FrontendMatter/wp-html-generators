@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "031a1b65228e1f3360fd10dc13b9a7ba",
+    "hash": "fd8443f9f7e9552f8ca71540775a5085",
     "packages": [
         {
             "name": "composer/installers",
@@ -951,6 +951,37 @@
             "time": "2014-04-13 20:20:56"
         },
         {
+            "name": "mosaicpro/grid",
+            "version": "dev-default",
+            "source": {
+                "type": "hg",
+                "url": "ssh://hg@bitbucket.org/lazabogdan/mosaicpro-grid",
+                "reference": "f63765ed1ced"
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "mosaicpro/core": "dev-master",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Mosaicpro\\Grid\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Laza Bogdan",
+                    "email": "laza.bogdan@macro-net.ro"
+                }
+            ],
+            "description": "Bootstrap 3 Grid Markup Generator",
+            "time": "2014-04-20 10:44:58"
+        },
+        {
             "name": "mosaicpro/list-group",
             "version": "dev-default",
             "source": {
@@ -1741,6 +1772,7 @@
         "mosaicpro/button": 20,
         "mosaicpro/form": 20,
         "mosaicpro/table": 20,
+        "mosaicpro/grid": 20,
         "mosaicpro/wp-core": 20
     },
     "platform": {
