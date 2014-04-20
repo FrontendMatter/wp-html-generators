@@ -17,7 +17,9 @@ require_once dirname(__FILE__) . '/vendor/illuminate/support/Illuminate/Support/
 // instantiate the container
 $app = new \Illuminate\Container\Container;
 $app->bind('app', $app);
-$app->bind('request', '\Illuminate\Http\Request');
+$app->bind('request', function(){
+    return new \Illuminate\Http\Request;
+});
 $app['env'] = "";
 
 // bind the config component to the container
@@ -102,6 +104,6 @@ class_alias('Mosaicpro\Table\Table', 'Table');
 
 add_action('admin_enqueue_scripts', function()
 {
-    wp_enqueue_script('admin-bootstrap', plugin_dir_url(__FILE__) . 'assets/bootstrap/js/bootstrap.min.js', ['jquery'], '3.1.1', true);
-    wp_enqueue_style('admin-bootstrap', plugin_dir_url(__FILE__) . 'assets/bootstrap/css/admin-bootstrap-wrapper-3.1.1.css', [], '3.1.1');
+    wp_enqueue_script('mosaicpro-wp-admin-bootstrap', plugin_dir_url(__FILE__) . 'assets/bootstrap/js/bootstrap.min.js', ['jquery'], '3.1.1', true);
+    wp_enqueue_style('mosaicpro-wp-admin-theme', plugin_dir_url(__FILE__) . 'assets/bootstrap/css/wp-admin-theme.css', []);
 });
