@@ -5869,8 +5869,26 @@
     display: none !important;
   }
 }
+.bootstrap {
+  /* Custom inverse button
+  -------------------------------------------------- */
+}
 .bootstrap .nav-tabs {
   margin-bottom: 15px;
+}
+.bootstrap hr {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.bootstrap .btn-inverse,
+.bootstrap .btn-inverse:hover,
+.bootstrap .btn-inverse:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background: #222222;
+}
+.bootstrap .btn-inverse:hover {
+  background: #3c3c3c;
 }
 #poststuff .inside {
   margin: 11px 0 0;
