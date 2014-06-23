@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: WP HTML Generators
+Plugin Name: WP HTML Generators Library
 Plugin URI: http://mosaicpro.biz
 Description: HTML Generators for WordPress
 Version: 1.0.0
@@ -108,4 +108,10 @@ add_action('admin_enqueue_scripts', function()
     wp_enqueue_script('mp-bootstrap', plugin_dir_url(__FILE__) . 'assets/bootstrap/js/bootstrap.min.js', ['jquery'], '3.1.1', true);
     wp_enqueue_style('mp-admin-theme', plugin_dir_url(__FILE__) . 'assets/bootstrap/css/wp-admin-theme.css', [], '3.1.1');
     wp_enqueue_style('mp-font-awesome', plugin_dir_url(__FILE__) . 'assets/font-awesome/css/font-awesome.min.css', [], '4.0.3');
+});
+
+add_action('wp_enqueue_scripts', function()
+{
+    wp_enqueue_script('mp-bootstrap', plugin_dir_url(__FILE__) . 'assets/bootstrap/js/bootstrap.min.js', ['jquery'], '3.1.1', true);
+    wp_enqueue_style('mp-front-theme', plugin_dir_url(__FILE__) . 'assets/bootstrap/css/bootstrap-wrapper-3.1.1.css', [], '3.1.1');
 });
