@@ -1,5 +1,5 @@
 {
-  "name": "mosaicpro-wp-package",
+  "name": "mosaicpro-wp-html-generators",
   "private": true,
   "main": "Gruntfile.js",
   "version": "0.1.0",

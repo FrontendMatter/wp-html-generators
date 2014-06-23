@@ -1,6 +1,7 @@
 {
-    "name": "mosaicpro/wp-package-test",
-    "description": "WordPress plugin as composer package",
+    "name": "mosaicpro/wp-html-generators",
+    "version": "1.0.0",
+    "description": "HTML Generators for WordPress",
     "type": "wordpress-plugin",
     "authors": [
         {
@@ -12,24 +13,6 @@
     "require": {
         "php": ">=5.3.0",
         "composer/installers": "~1.0",
-        "mosaicpro/core": "dev-master",
-        "mosaicpro/accordion": "dev-master",
-        "mosaicpro/list-group": "dev-master",
-        "mosaicpro/media": "dev-master",
-        "mosaicpro/panel": "dev-master",
-        "mosaicpro/alert": "dev-master",
-        "mosaicpro/nav": "dev-master",
-        "mosaicpro/navbar": "dev-master",
-        "mosaicpro/dropdown": "dev-master",
-        "mosaicpro/button-group": "dev-master",
-        "mosaicpro/progress-bar": "dev-master",
-        "mosaicpro/modal": "dev-master",
-        "mosaicpro/tab": "dev-master",
-        "mosaicpro/carousel": "dev-master",
-        "mosaicpro/button": "dev-master",
-        "mosaicpro/form": "dev-master",
-        "mosaicpro/table": "dev-master",
-        "mosaicpro/grid": "dev-master",
-        "mosaicpro/wp-core": "dev-master"
+        "mosaicpro/html-generators": "1.0.0"
     }
 }

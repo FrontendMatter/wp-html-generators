@@ -1,18 +1,18 @@
 <?php
 /*
-Plugin Name: WP Composer Package
+Plugin Name: WP HTML Generators
 Plugin URI: http://mosaicpro.biz
-Description: WordPress Plugin as Composer package
-Version: 1.0
+Description: HTML Generators for WordPress
+Version: 1.0.0
 Author: MosaicPro
 Author URI: http://mosaicpro.biz
 */
 
 // include the autoloader
-include dirname(__FILE__) . '/vendor/autoload.php';
+include dirname(__FILE__) . '/../../../vendor/autoload.php';
 
 // include the illuminate/support helpers
-require_once dirname(__FILE__) . '/vendor/illuminate/support/Illuminate/Support/helpers.php';
+require_once dirname(__FILE__) . '/../../../vendor/illuminate/support/Illuminate/Support/helpers.php';
 
 // instantiate the container
 $app = new \Illuminate\Container\Container;
@@ -77,31 +77,31 @@ $app->bindShared('form', function($app)
     return $form->setSessionStore($app['session.store']);
 });
 
-// register mosaicpro/form config package
-$app['config']->package('mosaicpro/form', __DIR__ . '/vendor/mosaicpro/form/src/config');
+// register mosaicpro/html-generators config package
+$app['config']->package('mosaicpro/htmlGenerators', __DIR__ . '/../../../vendor/mosaicpro/html-generators/src/config');
 
 // register the container
-\Mosaicpro\Core\IoC::setContainer($app);
+\Mosaicpro\HtmlGenerators\Core\IoC::setContainer($app);
 
 // create shorter aliases for the components
-class_alias('Mosaicpro\Accordion\Accordion', 'Accordion');
-class_alias('Mosaicpro\Alert\Alert', 'Alert');
-class_alias('Mosaicpro\Button\Button', 'Button');
-class_alias('Mosaicpro\ButtonGroup\ButtonGroup', 'ButtonGroup');
-class_alias('Mosaicpro\Carousel\Carousel', 'Carousel');
-class_alias('Mosaicpro\Dropdown\Dropdown', 'Dropdown');
-class_alias('Mosaicpro\Form\FormField', 'FormField');
-class_alias('Mosaicpro\Form\Checkbox', 'Checkbox');
-class_alias('Mosaicpro\ListGroup\ListGroup', 'ListGroup');
-class_alias('Mosaicpro\Media\Media', 'Media');
-class_alias('Mosaicpro\Modal\Modal', 'Modal');
-class_alias('Mosaicpro\Nav\Nav', 'Nav');
-class_alias('Mosaicpro\Navbar\Navbar', 'Navbar');
-class_alias('Mosaicpro\Panel\Panel', 'Panel');
-class_alias('Mosaicpro\ProgressBar\ProgressBar', 'ProgressBar');
-class_alias('Mosaicpro\Tab\Tab', 'Tab');
-class_alias('Mosaicpro\Table\Table', 'Table');
-class_alias('Mosaicpro\Grid\Grid', 'Grid');
+class_alias('Mosaicpro\HtmlGenerators\Accordion\Accordion', 'Accordion');
+class_alias('Mosaicpro\HtmlGenerators\Alert\Alert', 'Alert');
+class_alias('Mosaicpro\HtmlGenerators\Button\Button', 'Button');
+class_alias('Mosaicpro\HtmlGenerators\ButtonGroup\ButtonGroup', 'ButtonGroup');
+class_alias('Mosaicpro\HtmlGenerators\Carousel\Carousel', 'Carousel');
+class_alias('Mosaicpro\HtmlGenerators\Dropdown\Dropdown', 'Dropdown');
+class_alias('Mosaicpro\HtmlGenerators\Form\FormField', 'FormField');
+class_alias('Mosaicpro\HtmlGenerators\Form\Checkbox', 'Checkbox');
+class_alias('Mosaicpro\HtmlGenerators\ListGroup\ListGroup', 'ListGroup');
+class_alias('Mosaicpro\HtmlGenerators\Media\Media', 'Media');
+class_alias('Mosaicpro\HtmlGenerators\Modal\Modal', 'Modal');
+class_alias('Mosaicpro\HtmlGenerators\Nav\Nav', 'Nav');
+class_alias('Mosaicpro\HtmlGenerators\Navbar\Navbar', 'Navbar');
+class_alias('Mosaicpro\HtmlGenerators\Panel\Panel', 'Panel');
+class_alias('Mosaicpro\HtmlGenerators\ProgressBar\ProgressBar', 'ProgressBar');
+class_alias('Mosaicpro\HtmlGenerators\Tab\Tab', 'Tab');
+class_alias('Mosaicpro\HtmlGenerators\Table\Table', 'Table');
+class_alias('Mosaicpro\HtmlGenerators\Grid\Grid', 'Grid');
 
 add_action('admin_enqueue_scripts', function()
 {
