@@ -2,14 +2,17 @@
 /*
 Plugin Name: WP HTML Generators Library
 Plugin URI: http://mosaicpro.biz
-Description: HTML Generators for WordPress
+Description: HTML Generators for WordPress - Libraries plugin
 Version: 1.0.0
 Author: MosaicPro
 Author URI: http://mosaicpro.biz
 */
 
+// If this file is called directly, exit.
+if ( ! defined( 'WPINC' ) ) { die; }
+
 // include the autoloader
-include dirname(__FILE__) . '/../../../vendor/autoload.php';
+require_once dirname(__FILE__) . '/../../../vendor/autoload.php';
 
 // include the illuminate/support helpers
 require_once dirname(__FILE__) . '/../../../vendor/illuminate/support/Illuminate/Support/helpers.php';
