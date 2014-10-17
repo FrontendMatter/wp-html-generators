@@ -23,10 +23,26 @@
     background: @inverseColor;
   }
   .btn-inverse:hover { background: lighten(@inverseColor, 10%); }
+  .modal { z-index: 100001; }
 
 }
 
 // WP Admin customizations
 #poststuff .inside {
     margin: 11px 0 0;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+#Modal_builderOptions {
+  .modal-dialog {
+    width: 98%;
+    height: 92%;
+    padding: 0;
+  }
+  .modal-content {
+    height: 99%;
+  }
 }

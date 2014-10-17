@@ -111,6 +111,11 @@ add_action('admin_enqueue_scripts', function()
     wp_enqueue_script('mp-bootstrap', plugin_dir_url(__FILE__) . 'assets/bootstrap/js/bootstrap.min.js', ['jquery'], '3.1.1', true);
     wp_enqueue_style('mp-admin-theme', plugin_dir_url(__FILE__) . 'assets/bootstrap/css/wp-admin-theme.css', [], '3.1.1');
     wp_enqueue_style('mp-font-awesome', plugin_dir_url(__FILE__) . 'assets/font-awesome/css/font-awesome.min.css', [], '4.0.3');
+
+    wp_enqueue_script('mp-builder-html-generators-main', plugin_dir_url(__FILE__) . 'assets/js/builder/builder.js', ['jquery', 'mp-builder'], '1.0', true);
+    wp_enqueue_script('mp-builder-html-generators-button', plugin_dir_url(__FILE__) . 'assets/js/builder/builder.button.js', ['jquery', 'mp-builder'], '1.0', true);
+    wp_enqueue_script('mp-builder-html-generators-accordion', plugin_dir_url(__FILE__) . 'assets/js/builder/builder.accordion.js', ['jquery', 'mp-builder'], '1.0', true);
+    wp_enqueue_script('mp-builder-html-generators-tabs', plugin_dir_url(__FILE__) . 'assets/js/builder/builder.tabs.js', ['jquery', 'mp-builder'], '1.0', true);
 });
 
 add_action('wp_enqueue_scripts', function()
